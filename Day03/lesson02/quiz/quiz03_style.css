@@ -1,0 +1,37 @@
+#year {
+  font-size: 20px;
+}
+
+.text {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#tb,
+th,
+td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+td {
+  vertical-align: top;
+  padding: 10px;
+  width: 150px;
+  height: 100px;
+}
+th {
+  height: 30px;
+}
+.off {
+  color: red;
+}
+
+/* table로 하면 그냥 태그라서 밑에 #today가 더 강력해서 #faa hover를 해도 색깔이 되는거고,
+#tb로 하면 같은 id니까 힘겨루기를 하게 돼서 hover를 해도 #ffa가 되는 거다. */
+table > tbody td:hover {
+  background-color: #ffa;
+}
+#today {
+  background-color: #faa;
+  font-weight: bold;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>예제4</title>
+  </head>
+  <body>
+    <!-- 테이블: 표를 만드는 태그 -->
+    <!-- table(전체), tr(행), th(제목 칸(셀)), td(일반 칸(셀)) -->
+    <!-- border속성은 쓰지 않는게 좋다. -->
+    <!-- 이렇게 제목 행이 없으면 tbody 생략 가능 -->
+    <table border="1">
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+      </tr>
+    </table>
+
+    <!-- 제목 행이 있는 테이블 -->
+    <table border="1">
+      <thead>
+        <tr>
+          <th>번호</th>
+          <th>제목</th>
+          <th>글쓴이</th>
+          <th>날짜</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>첫번째 글</td>
+          <td>바다</td>
+          <td>2024-10-24 16:24:30</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>두번째 글22</td>
+          <td>호돌이</td>
+          <td>2024-10-25 20:22:10</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr />
+
+    <!-- 셀 병합(merge) -->
+
+    <!-- 행 병합(rowspan): 아래 방향으로 -->
+    <table border="1">
+      <tbody>
+        <tr>
+          <!-- 시작 태그에 넣기 rowspan="합칠 칸 수" -->
+          <td rowspan="2">1</td>
+          <td>2</td>
+          <td rowspan="2">3</td>
+        </tr>
+        <tr>
+          <!-- 합쳐지는 칸은 제거 -->
+          <!-- <td>4</td> -->
+          <td>5</td>
+          <!-- <td>6</td> -->
+        </tr>
+      </tbody>
+    </table>
+
+    <hr />
+
+    <!-- 열 병합(colspan): 옆으로 합친다. -->
+    <table border="1" width="300">
+      <tr>
+        <td>1</td>
+        <td colspan="2">2</td>
+        <!-- <td>3</td> -->
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td colspan="3">7</td>
+        <!-- <td>8</td>
+        <td>9</td> -->
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- head는 보여주는 것보다 무언가를 기억하는 태그 -->
+    <title>외부 스타일시트</title>
+    <meta charset="utf-8" />
+    <!-- 외부 스타일시트 연결 -->
+    <!-- 같은 폴더 내에 있으면 그냥 이름만 적어도 된다. -->
+    <!-- 상대경로로 쓴 것. -->
+    <link rel="stylesheet" type="text/css" href="ex02_style.css" />
+  </head>
+  <body>
+    <b>ID</b>
+    <input type="text" id="userId" /><br /><br />
+    <b>Password</b>
+    <input type="password" class="password" /><br />
+    <b>Password check</b>
+    <input type="password" class="password" />
+
+    <hr />
+
+    <!-- 테이블 꾸미기 -->
+    <table id="tb">
+      <thead>
+        <tr>
+          <th>책</th>
+          <th>저자</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>이기적 유전자</td>
+          <td>리처드 도킨스</td>
+        </tr>
+        <tr>
+          <td>채식주의자</td>
+          <td>한강</td>
+        </tr>
+        <tr>
+          <td>종의 기원</td>
+          <td>찰스 다윈</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

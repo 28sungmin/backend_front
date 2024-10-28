@@ -1,0 +1,44 @@
+#tb {
+  width: 600px;
+  height: 250px;
+}
+#tb > thead {
+  height: 50px;
+}
+
+#tb,
+th,
+td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+
+#tb thead {
+  background-color: #aaf;
+}
+
+table tr:hover {
+  background-color: #aff;
+}
+#last {
+  background-color: green;
+}
+#tb td {
+  text-align: center;
+}
+
+#text {
+  width: 600px;
+}
+#text input {
+  width: 98px;
+  height: 20px;
+}
+.text-right {
+  text-align-last: right;
+}
+
+button {
+  width: 600px;
+  height: 35px;
+}

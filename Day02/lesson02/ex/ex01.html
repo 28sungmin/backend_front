@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>내부 스타일시트</title>
+
+    <!-- 문서 인코딩 종류 -->
+    <meta charset="utf-8" />
+    <!-- 문서에 정보를 알려주는 태그: meta -->
+    <!-- charset="utf-8": 생략 가능. 하지만 있는게 좋음. -->
+
+    <style>
+      /* 문서 전체에 효과 주기 */
+      * {
+        color: #7401df;
+      }
+
+      /* 태그에 효과 주기 */
+      body {
+        background-color: #eee;
+      }
+      h3 {
+        color: #088a4b;
+        text-align: center;
+      }
+      span {
+        color: blue;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+
+      /* id에 개별 효과 주기 */
+      #text1 {
+        color: yellowgreen;
+        font-size: 16px;
+      }
+      #text2 {
+        color: violet;
+        font-size: 14px;
+        font-style: italic;
+      }
+      #text3 {
+        color: tomato;
+        font-size: 20px;
+        background-color: aqua;
+      }
+
+      /* class에 효과 주기 */
+      .bg-yellow {
+        background-color: yellow;
+      }
+      .text-white {
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    그냥 글시를 써봅니다.
+    <h3>스타일시트 내용이 적용된 제목</h3>
+
+    <!-- 글씨를 담는 태그 -->
+    <span>글씨가 들어가는 span 태그</span>
+    <span>span 태그</span>
+    <br />
+
+    <!-- a 태그 -->
+    <a href="https://naver.com">네이버로 갑니다</a>
+    <br />
+
+    <!-- id 속성: 태그에 유일한 이름을 지정(중복 X => 문서에는 오로지 혼자 있어야 함) -->
+    <span id="text1">글씨 효과를 개별로 주고 싶다면?</span>
+    <br />
+    <span id="text2">이번에는 다른 효과</span><br />
+
+    <!-- class 속성: 태그에 중복되는 이름 지정(같은 효과를 주고 싶을 때 사용) -->
+    <span class="bg-yellow">글자 배경이 노란색으로 칠해지는 효과</span><br />
+    <!-- id가 class보다 우선순위가 더 높다. -->
+    <span id="text3" class="bg-yellow">text3 효과와 글자 배경 노란색</span
+    ><br />
+    <span class="bg-yellow text-white">글자색 흰색, 배경색 노란색</span><br />
+
+    <!-- 인라인 스타일(태그에 직접 주는 방식): 권장 X -> 우선순위가 가장 높음 > id > class > 태그 > 전체 -->
+    <span style="color: cadetblue">안녕하세요</span><br />
+    <span class="text-white bg-yellow" style="color: chocolate"
+      >안녕하세요222222</span
+    >
+  </body>
+</html>
